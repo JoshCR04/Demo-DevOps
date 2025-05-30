@@ -32,6 +32,17 @@ export class Card {
         </section>
         `;
 
-       
+        const btn = document.getElementById('joinBtn');
+        const msg = document.getElementById('mensaje');
+
+        btn?.addEventListener('click', () => {
+            if (msg) {
+                msg.classList.remove('hidden');
+                // Oculta el mensaje después de 3 segundos
+                setTimeout(() => {
+                    msg.classList.add('hidden');
+                }, 3000);
+            }
+        });
     }
 }
