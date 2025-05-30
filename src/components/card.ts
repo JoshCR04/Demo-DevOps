@@ -32,11 +32,6 @@ export class Card {
         </section>
         `;
 
-        const btn = document.getElementById('joinBtn');
-        const msg = document.getElementById('mensaje');
-
-
-            }
-        });
+       
     }
 }
